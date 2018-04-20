@@ -1,114 +1,149 @@
-html, body {
-  margin: 0;
-  height: 100%;
-  font-family: sans-serif;
-  font-weight: 300; }
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: 300;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
-
-.title {
-  margin-bottom: 0; }
-
-.subhead {
-  color: gray;
-  margin-top: 10px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
 
 textarea {
-  display: block;
-  border: none;
-  resize: none;
-  font-size: 1rem; }
+    display: block;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+}
 
 button {
-  cursor: pointer; }
+    cursor: pointer;
+}
 
 small {
-  display: block; }
+    display: block;
+}
 
 ul li {
-  list-style-type: none; }
+    list-style-type: none;
+}
 
-.menu, .main-area {
-  float: left; }
+.menu,
+.main-area {
+    float: left;
+}
 
 .menu {
-  width: 25%;
-  position: fixed;
-  height: 100%;
-  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25); }
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+.menu .title {
+    margin-bottom: 0;
+}
+
+.menu .subhead {
+    color: gray;
+    margin-top: 10px;
+}
 
 .menu textarea {
-  width: 100%;
-  min-height: 100px;
-  margin: 30px 0; }
+    width: 100%;
+    min-height: 100px;
+    margin: 30px 0;
+}
 
-.menu-body {
-  padding: 15px; }
+.menu .menu-body {
+    padding: 15px;
+}
 
 #add {
-  padding: 10px 25px;
-  border: none;
-  background: #a7fbff;
-  text-transform: uppercase;
-  margin-top: 10px;
-  transition: 0.4s all; }
+    padding: 10px 25px;
+    border: none;
+    background: #a7fbff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: 0.4s all;
+}
 
-#add:hover, #add:focus {
-  background: #9be9ec; }
+#add:hover,
+#add:focus {
+    background: #9be9ec;
+}
 
 #trash-all {
-  padding: 10px 25px;
-  border: none;
-  background: #ff3f4b;
-  text-transform: uppercase;
-  margin-top: 10px;
-  color: #fff;
-  transition: 0.4s all; }
+    padding: 10px 25px;
+    border: none;
+    background: #ff3f4b;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #fff;
+    transition: 0.4s all;
+}
 
-#trash-all:hover, #trash-all:focus {
-  background: #e82e3a; }
-
-.author {
-  position: absolute;
-  bottom: 15px;
-  left: 15px; }
+#trash-all:hover,
+#trash-all:focus {
+    background: #e82e3a;
+}
 
 .main-area {
-  width: 75%;
-  margin-left: 25%; }
+    width: 75%;
+    margin-left: 25%;
+}
 
-.main-body {
-  width: 65%;
-  padding: 15px; }
+.main-area .main-body {
+    width: 65%;
+    padding: 15px;
+}
 
 .note {
-  width: 100%;
-  padding: 8px;
-  position: relative;
-  margin: 25px 0;
-  background: #90f7af;
-  border-radius: 8px;
-  transition: 0.4s all;
-  animation: fadeIn 0.75s linear; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+    width: 100%;
+    padding: 8px;
+    position: relative;
+    margin: 25px 0;
+    background: #90f7af;
+    border-radius: 8px;
+    transition: 0.4s all;
+    animation: fadeIn 0.75s linear;
+}
 
 .note textarea {
-  width: 70%;
-  min-height: 20px;
-  background: inherit; }
+    width: 70%;
+    min-height: 20px;
+    background: inherit;
+}
 
-.delete-btn {
-  background: #ff3f4b;
-  color: #fff;
-  border-radius: 5px; }
+.note .btn-container {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
 
-.btn-container {
-  position: absolute;
-  top: 5px;
-  right: 5px; }
+.note .btn-container .delete-btn {
+    background: #ff3f4b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.author {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

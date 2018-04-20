@@ -9,13 +9,6 @@ html,body{
 h1,h2,h3,h4,h5,h6{
     font-weight: $fontWeight;
 }
-.title{
-    margin-bottom: 0;
-}
-.subhead{
-    color: gray;
-    margin-top: 10px;
-}
 textarea{
     display: block;
     border: none;
@@ -39,15 +32,23 @@ ul li{
     position: fixed;
     height: 100%;
     box-shadow: 0px 1px 20px rgba(0,0,0,0.25);
+    .title{
+        margin-bottom: 0;
+    }
+    .subhead{
+        color: gray;
+        margin-top: 10px;
+    }
+    textarea{
+        width: 100%;
+        min-height: 100px;
+        margin: 30px 0;
+    }
+    .menu-body{
+        padding: 15px;
+    }
 }
-.menu textarea{
-    width: 100%;
-    min-height: 100px;
-    margin: 30px 0;
-}
-.menu-body{
-    padding: 15px;
-}
+
 #add{
     padding: 10px 25px;
     border: none;
@@ -55,9 +56,10 @@ ul li{
     text-transform: uppercase;
     margin-top: 10px;
     transition: 0.4s all;
-}
-#add:hover, #add:focus{
-    background: #9be9ec;
+
+    &:hover, &:focus{
+        background: #9be9ec;
+    }
 }
 #trash-all{
     padding: 10px 25px;
@@ -67,22 +69,18 @@ ul li{
     margin-top: 10px;
     color: #fff;
     transition: 0.4s all;
-}
-#trash-all:hover, #trash-all:focus{
-    background: #e82e3a;
-}
-.author{
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
+
+    &:hover, &:focus{
+        background: #e82e3a;
+    }
 }
 .main-area{
     width: 75%;
     margin-left: 25%;
-}
-.main-body{
-    width: 65%;
-    padding: 15px;
+    .main-body{
+        width: 65%;
+        padding: 15px;
+    }
 }
 .note{
     width: 100%;
@@ -93,6 +91,29 @@ ul li{
     border-radius: 8px;
     transition: 0.4s all;
     animation: fadeIn 0.75s linear;
+
+    textarea{
+        width: 70%;
+        min-height: 20px;
+        background: inherit;
+    }
+
+    .btn-container{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        .delete-btn{
+            background: #ff3f4b;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
+.author{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
 }
 @keyframes fadeIn {
     from{
@@ -101,19 +122,4 @@ ul li{
     to{
         opacity: 1;
     }
-}
-.note textarea{
-    width: 70%;
-    min-height: 20px;
-    background: inherit;
-}
-.delete-btn{
-    background: #ff3f4b;
-    color: #fff;
-    border-radius: 5px;
-}
-.btn-container{
-    position: absolute;
-    top: 5px;
-    right: 5px;
 }
